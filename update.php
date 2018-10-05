@@ -16,14 +16,14 @@
                 NIM
             </td>
             <td>
-                <input type="text" name="nim" value="<?php echo $row['nim'] ?>"><br><br>
+                <input type="text" name="nim" placeholder="<?php echo $row['nim'] ?>"><br><br>
             </td>
         <tr>
             <td>
                 Nama
             </td>
             <td>
-                <input type="text" name="nama" value="<?php echo $row['nama'] ?>"><br><br>
+                <input type="text" name="nama" placeholder="<?php echo $row['nama'] ?>"><br><br>
             </td>
         <tr>
             <td>
