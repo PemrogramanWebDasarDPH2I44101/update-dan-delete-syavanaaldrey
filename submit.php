@@ -1,20 +1,19 @@
 <?php
 require_once("db.php");
 
-$nama       = $_POST['nama'];
-$nim        = $_POST['nim'];
-$tgl_lahir  = $_POST['tgl_lahir'];
 
-$sql = "INSERT INTO siswa(nama, nim, tgl_lahir) 
-        VALUES ('$nama','$nim','$tgl_lahir')";
+$nim = $_POST["nim"];
+$nama = $_POST["nama"];
+$tgl_lahir = $_POST["tgl_lahir"];
 
+$sql = "INSERT INTO siswa(nim,nama,tgl_lahir) VALUES('$nim','$nama','$tgl_lahir')";
 
-if (mysqli_query($conn, $sql)) {
+if (mysqlI_query($conn, $sql)) {
     echo "New record created successfully<br>";
-} else {
+}else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
 
 mysqli_close($conn);
-echo "silahkan klik <a href='list.php'>link</a> untuk ke halaman list";
+echo "Silahkan klik <a href='list.php'>link ini</a> SELANJUTNYA";
 ?> 
